@@ -22,6 +22,9 @@ Route::get('/servImail', function () {
     return view('/info.servImail');
 });
 
+Route::get('/video3', function () {
+    return view('/javascrip/video3/index');
+});
 
 Auth::routes();
 
