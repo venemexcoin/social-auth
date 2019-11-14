@@ -30,37 +30,15 @@ Blog
 @endsection
 
 @section('content')
-<div class="container">
 
+<div id="app">
+    <div class="container">
 
+    </div>
 </div>
 <script>
-//tipos de datos
-var edad = "51"
-// String - Cadenas de texto
-var nombre = "Eduardo";
-var apellido = "liendo";
-// var texto = "Los mejores videos son de \"chamocell\" ";
-// Arrayy Arreglos
-var amigos = ["Carlos", "Alejandro", "Cesar"];
-
-//document.write(amigos[2]);
-
-//ojetos
-var objeto = {
-    color: "black ",
-    size: 12
-}
-// Boilean - Boleano
-
-var boleano = true;
-
-// Undefined
-var cualquier;
-
-//Null
-
-
+       <h1 id="titulo">Titulo de nustro sitio web</h1>
+    
 
 </script>
 
@@ -69,4 +47,6 @@ var cualquier;
 @section('scripts')
 <script src="{{asset("fron/js/js.js")}}"></script>
 
+
 @endsection
+

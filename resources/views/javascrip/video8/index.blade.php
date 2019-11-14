@@ -30,43 +30,35 @@ Blog
 @endsection
 
 @section('content')
+<div id="app">
 <div class="container">
 
+    <h1 id="edad"></h1>
 
 </div>
+</div>
 <script>
-//tipos de datos
-var edad = "51"
-// String - Cadenas de texto
-var nombre = "Eduardo";
-var apellido = "liendo";
-// var texto = "Los mejores videos son de \"chamocell\" ";
-// Arrayy Arreglos
-var amigos = ["Carlos", "Alejandro", "Cesar"];
 
-//document.write(amigos[2]);
+var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
 
-//ojetos
-var objeto = {
-    color: "black ",
-    size: 12
-}
-// Boilean - Boleano
+    var numeroDias = dias.length - 1;
+    var i = 0;
 
-var boleano = true;
+    while(i <= numeroDias){
+        document.write( dias[i] + "<br/>");
+        i++;
+    }
 
-// Undefined
-var cualquier;
-
-//Null
-
+    do{
+        // Simpre ejecuta al menos una vez
+    }while(condicion);
 
 
 </script>
-
 @endsection
 
 @section('scripts')
 <script src="{{asset("fron/js/js.js")}}"></script>
 
 @endsection
+

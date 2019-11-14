@@ -32,41 +32,35 @@ Blog
 @section('content')
 <div class="container">
 
-
+<h1> </h1>
 </div>
 <script>
-//tipos de datos
-var edad = "51"
-// String - Cadenas de texto
-var nombre = "Eduardo";
-var apellido = "liendo";
-// var texto = "Los mejores videos son de \"chamocell\" ";
-// Arrayy Arreglos
-var amigos = ["Carlos", "Alejandro", "Cesar"];
+var amigos = ["Carlos","Cesar","Alex", "manuel"];
 
-//document.write(amigos[2]);
+// document.write("Tienes " + amigos.length + " amigos");
 
-//ojetos
-var objeto = {
-    color: "black ",
-    size: 12
-}
-// Boilean - Boleano
+// amigos[amigos.length] = "Fernando";
 
-var boleano = true;
+// amigos.push("Fernado", "Luis", "Favian", "godoy");
 
-// Undefined
-var cualquier;
+// amigos.pop();
 
-//Null
+// amigos2 = ["Luis", "Favio", "Godoy", " Fernanda"];
 
+// amigos3 = amigos .concat(amigos2);
 
+// amigos2 = amigos.join(" | ")
 
+// document.write(amigos2);
+
+var ordenados = amigos.sort();
+
+document.write(ordenados)
 </script>
-
 @endsection
 
 @section('scripts')
 <script src="{{asset("fron/js/js.js")}}"></script>
 
 @endsection
+

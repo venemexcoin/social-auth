@@ -129,3 +129,17 @@
     color: white;
 
 }
+
+.c-calcu {
+    border-color: darken(#3b5998, 3%);
+}
+
+.CalcuT {
+    font-family: SairaStencilOne-Regular;
+}
+
+.calcuE {
+    font-family: Anton-Regular;
+    font-size: 20px;
+    color: rgb(45, 45, 241);
+}

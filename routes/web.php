@@ -22,8 +22,87 @@ Route::get('/servImail', function () {
     return view('/info.servImail');
 });
 
-Route::get('/video3', function () {
-    return view('/javascrip/video3/index');
+// Route::get('/video3', function () {
+//     return view('/javascrip/video3/index');
+// });
+
+// Route::get('/video4', function () {
+
+//     $user = App\User::all();
+
+//     //dd($user);
+//     return view('/javascrip/video4/index', compact('user'));
+// });
+
+// Route::get('video5', function () {
+
+//     $users = App\User::get();
+
+//     // dd($users);
+//     return view('/javascrip/video5/index', ['users' => $users]);
+// });
+
+// Route::get('video6', function () {
+
+//     $users = App\User::get();
+
+//     // dd($users);
+//     return view('/javascrip/video6/index', ['users' => $users]);
+// });
+// Route::get('video7', function () {
+
+//     $users = App\User::get();
+
+//     // dd($users);
+//     return view('/javascrip/video7/index', ['users' => $users]);
+// });
+
+// Route::get('video8', function () {
+
+//     $users = App\User::get();
+
+//     // dd($users);
+//     return view('/javascrip/video8/index', ['users' => $users]);
+// });
+
+// Route::get('video9', function () {
+
+//     $users = App\User::get();
+
+//     // dd($users);
+//     return view('/javascrip/video9/index', ['users' => $users]);
+// });
+
+// Route::get('video10', function () {
+
+//     $users = App\User::get();
+
+//     // dd($users);
+//     return view('/javascrip/video10/index', ['users' => $users]);
+// });
+
+// Route::get('video11', function () {
+
+//     $users = App\User::get();
+
+//     // dd($users);
+//     return view('/javascrip/video11/index', ['users' => $users]);
+// });
+
+// Route::get('video12', function () {
+
+//     $users = App\User::get();
+
+//     // dd($users);
+//     return view('/javascrip/video12/index', ['users' => $users]);
+// });
+
+Route::get('video13', function () {
+
+    $users = App\User::get();
+
+    // dd($users);
+    return view('/javascrip/video13/index', ['users' => $users]);
 });
 
 Auth::routes();

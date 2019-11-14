@@ -30,43 +30,37 @@ Blog
 @endsection
 
 @section('content')
+<div id="app">
 <div class="container">
 
+    <h1 id="edad"></h1>
 
 </div>
+</div>
 <script>
-//tipos de datos
-var edad = "51"
-// String - Cadenas de texto
-var nombre = "Eduardo";
-var apellido = "liendo";
-// var texto = "Los mejores videos son de \"chamocell\" ";
-// Arrayy Arreglos
-var amigos = ["Carlos", "Alejandro", "Cesar"];
 
-//document.write(amigos[2]);
+// for(i = 1; i <= 100; i++ ){
+//     document.write(i + '<br/>')
+// }
 
-//ojetos
-var objeto = {
-    color: "black ",
-    size: 12
+// var numeroDeUsuarios = 50;
+
+//  for(i = 1; i <= numeroDeUsuarios; i++ ){
+//      document.write(i + "<br/>");
+//  }
+
+var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+
+for( i = 0; i <= dias.length - 1; i++){
+    document.write( dias[i] + "<br/>")
 }
-// Boilean - Boleano
-
-var boleano = true;
-
-// Undefined
-var cualquier;
-
-//Null
-
 
 
 </script>
-
 @endsection
 
 @section('scripts')
 <script src="{{asset("fron/js/js.js")}}"></script>
 
 @endsection
+
