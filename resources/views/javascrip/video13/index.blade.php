@@ -33,20 +33,35 @@ Blog
 
 <div id="app">
     <div class="container">
+        <h1 id="titulo">Titulo de nustro sitio web</h1>
+        <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing
+             elit. Odio quasi magnam iste, obcaecati nesciunt culpa
+             placeat sed! Assumenda, amet error, veniam minima unde
+             soluta, beatae velit vero fugiat distinctio explicabo.</p>
+
+        <p id="segundo">2. Lorem ipsum dolor sit amet, consectetur adipisicing
+             elit. Odio quasi magnam iste, obcaecati nesciunt culpa
+             placeat sed! Assumenda, amet error, veniam minima unde
+             soluta, beatae velit vero fugiat distinctio explicabo.</p>
+
+        <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing
+             elit. Odio quasi magnam iste, obcaecati nesciunt culpa
+             placeat sed! Assumenda, amet error, veniam minima unde
+             soluta, beatae velit vero fugiat distinctio explicabo.</p>
 
     </div>
 </div>
-<script>
-       <h1 id="titulo">Titulo de nustro sitio web</h1>
-    
 
-</script>
 
 @endsection
 
 @section('scripts')
 <script src="{{asset("fron/js/js.js")}}"></script>
+<script>
+      var elementosP = documet.getElementByName()
 
+
+</script>
 
 @endsection
 
