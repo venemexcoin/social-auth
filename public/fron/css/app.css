@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 @font-face {
     font-family: "SairaStencilOne-Regular";
     src: url("../css/ttf/SairaStencilOne-Regular.ttf");
@@ -142,4 +151,60 @@
     font-family: Anton-Regular;
     font-size: 20px;
     color: rgb(45, 45, 241);
+}
+
+
+/* Css de Reloj  */
+
+.wrap {
+    width: 90%;
+    max-width: 1000px;
+    /* margin: auto; */
+}
+
+.widget {
+    width: 40%;
+    margin: 2em;
+    /* margin: 32px; */
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha {
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 0.3125rem;
+    /* margin-bottom: 5px; */
+    background: rgba(85, 172, 238, .5);
+    padding: 10px;
+    width: 100%;
+}
+
+.reloj {
+    font-family: Oswald, Arial;
+    width: 100%;
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    background: rgba(85, 172, 238, .5);
+}
+
+.reloj .caja-segundos {
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 1rem;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .wrap {
+        display: none;
+    }
 }

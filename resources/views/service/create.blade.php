@@ -36,7 +36,7 @@ Blog
  <div class="content-wrapper">
 
 
-        <!-- Main content -->
+        {{-- <!-- Main content -->
         <section class="content ">
           <div class="container-fluid ">
             <div class="row">
@@ -54,23 +54,23 @@ Blog
                     </div>
                   </div>
                   <div class="card-body">
-                 
+
                     <div class="row">
                       <div class="col-md-12">
-                      
+
                         <!-- select -->
                         <div class="form-group">
                           <label>HOT AT&T SERVICES</label>
                           <select class="custom-select">
-                            
+
                             @foreach ($products as $product)
-                            
+
                           <option> {{ $product->name}} - ${{$product->price}}</option>
-                            
+
                             @endforeach
 
                           </select>
-                          
+
                         </div>
                       </div>
                   </div>
@@ -84,7 +84,7 @@ Blog
               </div>
             </div>
           </div>
-        </section>
+        </section> --}}
  </div>
 
 @endsection

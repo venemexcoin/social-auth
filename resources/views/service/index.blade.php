@@ -60,16 +60,23 @@ Blog
 
                         <!-- select -->
                         <div class="form-group">
-                          <label>HOT AT&T SERVICES</label>
+                          <label>Selecciona tu servicio</label>
 
 
-                          {!!Form::open(['route' => 'selector', 'files' => true]) !!}
+                        <form action="{{ route('selector')}}" name="selector1" method="get" id="forserver">
+                            @csrf
 
-                              @include('service.partials.form_select')
-
-                           {!!Form::close() !!} 
-
-
+                            <div class="row">
+                                    <div class="col-md-12">
+                                      <!-- select -->
+                                      <select class="custom-select" id="buscar1">
+                                            <option id="selecOp" selected value="title">Selecciona tu servicio</option>
+                                            @foreach ($products as $product)
+                                      <option name="opcion" id="nombre" value="nombre"><a href="#"
+                                        id="nombre" value="nombre">{{ $product->name}} {{ $product->price }}</a> </option>
+                                            @endforeach
+                                          </select>
+                        </form>
                         </div>
                       </div>
                   </div>
@@ -97,5 +104,25 @@ var app = new Vue({
   }
 });
 
+(function(){
+
+    var buscar1 = document.getElementById("buscar1");
+    var nombre = document.getElementById("nombre");
+
+    // Funciones
+    var nombreNuevo = function(){
+        var item = nombre.value;
+        alert(item);
+    };
+
+    //Eventos
+
+//todos elementos de la lista
+for (var i = 0; i <= buscar1.children.length - 1; i++) {
+    buscar1.children[i].addEventListener("click", nombreNuevo);
+
+};
+
+}())
 </script>
 @endsection

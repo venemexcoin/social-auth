@@ -33,7 +33,8 @@ Blog
 
 <div id="app">
     <div class="container">
-        <h1 id="titulo">Titulo de nustro sitio web</h1>
+        <h1 id="titulo" class="text-center">Titulo de nustro sitio web</h1>
+        <div id="subtitilo"></div>
         <p> 1. Lorem ipsum dolor sit amet, consectetur adipisicing
              elit. Odio quasi magnam iste, obcaecati nesciunt culpa
              placeat sed! Assumenda, amet error, veniam minima unde
@@ -52,19 +53,30 @@ Blog
     </div>
 </div>
 
-<script>
 
-    var elementosP = document.getElementsByTagName("p");
-    var segundoParrafo = document.getElementById("segundo");
-
-
-</script>
 
 @endsection
 
 @section('scripts')
 <script src="{{asset("fron/js/js.js")}}"></script>
+<script>
 
+    var elementosP = document.getElementsByTagName("p");
+    var segundoParrafo = document.getElementById("segundo");
+
+    // 1. Crear el elemento
+    var elemento = document.createElement("h2");
+    //2. Crear un nodo de texto
+    var contenido = document.createTextNode("Este es nuestro Titilo");
+    //3. Añadir el nodo de texto al elemento
+    elemento.appendChild(contenido);
+    //4. Agregar atributos al fa-elementor
+    elemento.setAttribute("align", "center");
+    //5.Agregar el elemento al documento
+    document.getElementById("subtitilo").appendChild(elemento);  //ejemplo 1
+    // document.body.appendChild(elemento);  //para agregarlo al final
+
+</script>
 
 @endsection
 
