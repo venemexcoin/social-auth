@@ -51,7 +51,7 @@ breadcrumb-item active
 
                 <div class="col-md-12">
                 <br>
-                <h2><a href="{{ route('chat.show', ['chat' => $chat->id]) }}">{{$chat->title}}</a> </h2>
+                <h2><a href="{{ route('chat.show', ['chat' => $chat->id]) }}" class="animated flipInX">{{$chat->title}}</a> </h2>
 
 
                      @if($chat->wasCreatedBy(Auth::user() ))  {{--metodo de validacion creado en chat.php --}}

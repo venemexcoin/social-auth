@@ -41,7 +41,7 @@ Foros
                     <!-- Default box -->
                     <div class="card">
                     <!--card header -->
-                    <div class="card-header blog-header">
+                    <div class="card-header blog-header animated flipInX">
                         {{$post->name}}
                     </div>
                     <!--/.card header -->

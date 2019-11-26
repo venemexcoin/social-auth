@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="{{asset("fron/$theme/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css")}}">
         <!-- CSS personal -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <!-- Anumate CSS -->
+        <link rel="stylesheet" href="{{asset("fron/css/animate.css")}}">
 
         <link rel="stylesheet" href="{{asset("fron/css/app.css")}}">
     @yield('styles')
@@ -58,7 +60,7 @@
               <div class="container-fluid">
                 <div class="row mb-2">
                   <div class="col-sm-6">
-                    <h1 class="ftitle">@yield("titles")</h1>
+                    <h1 class="ftitle animated bounceInDown">@yield("titles")</h1>
                   </div>
                   <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
