@@ -18,58 +18,14 @@
                                             {{ Form::label('description', 'Descripción del producto', ['class' => 'etiquetaF']) }}
                                             {{ Form::text('description', null, ['class' => 'form-control']) }}
                                     </div>
-                                     <div class="form-group">
-                                            {{ Form::label('time', 'Tiempo de respuesta', ['class' => 'etiquetaF']) }}
-                                            {{ Form::text('time', null, ['class' => 'form-control']) }}
-                                    </div>
-                                   
-
-                                     <section class="content">
-                                            <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="card card-outline card-info">
-                                                <div class="card-header">
-                                                    <h3 class="card-title">
-                                                    {{ Form::label('info', 'Informmacion para el cliente ', ['class' => 'etiquetaF']) }}
-
-                                                    </h3>
-                                                    <!-- tools box -->
-                                                    <div class="card-tools">
-                                                    <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip"
-                                                            title="Collapse">
-                                                        <i class="fas fa-minus"></i></button>
-                                                    <button type="button" class="btn btn-tool btn-sm" data-card-widget="remove" data-toggle="tooltip"
-                                                            title="Remove">
-                                                        <i class="fas fa-times"></i></button>
-                                                    </div>
-                                                    <!-- /. tools -->
-                                                </div>
-                                                <!-- /.card-header -->
-                                                <div class="card-body pad">
-                                                 <div class="mb-3">
-
-                                                    {{ Form::textarea('info', null, ['class' => "textarea",
-                                                 'style'=>'width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;'])}}
-                                                    </div>
-                                                    <p class="text-sm mb-0">
-                                                         Editor <a href="https://chamocell.com">Documentation and license
-                                                        information.</a>
-                                                    </p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                             <!-- /.col-->
-                                            </div>
-                                         <!-- ./row -->
-                                        </section>
-                                        <!-- /.content --> 
-                                     <div class="form-group">
+                                    <div class="form-group">
                                             {{ Form::label('price', 'Precio fiat del Producto', ['class' => 'etiquetaF']) }}
                                             {{ Form::text('price', null, ['class' => 'form-control']) }}
-                                    </div>       
-
-                                   
-
+                                    </div>
+                                    <div class="form-group">
+                                            {{ Form::label('cripto', 'Precio cripto del Producto', ['class' => 'etiquetaF']) }}
+                                            {{ Form::text('cripto', null, ['class' => 'form-control']) }}
+                                    </div>
                             </div>
                             <!--/.card body-->
 
@@ -86,18 +42,7 @@
           </div>
         </div>
 </section>
-@section('scripts')
-<script src="{{ asset("fron/vendor/jquery.stringToSlug.min.js")}}"></script>
-<script>
-//console.log('conectado desde el formulario');
-$(document).ready(function(){
-    $("#name, #slug").stringToSlug({
-        callback: function(text){
-            $("#slug").val(text);
-        }
-    });
-});
-</script>
-@endsection
+
+
 
 

@@ -178,7 +178,6 @@ return [
         Caffeinated\Shinobi\ShinobiServiceProvider::class,
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-        Biscolab\ReCaptcha\ReCaptchaServiceProvider::class,
 
     ],
 
@@ -234,7 +233,6 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-        'ReCaptcha' => Biscolab\ReCaptcha\Facades\ReCaptcha::class,
 
     ],
 

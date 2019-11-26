@@ -17,7 +17,6 @@ Productos
 @section('content')
 
 {!!Form::open(['route' => 'products.store']) !!}
-
     @include('products.partials.form')
 
 {!!Form::close() !!}

@@ -8,7 +8,6 @@ use App\Post;
 use App\Category;
 use App\User;
 use App\Comment;
-use App\Product;
 
 class PageController extends Controller
 {
@@ -53,6 +52,4 @@ class PageController extends Controller
         //dd($user->name);
         return view('web.post', compact('user'));
     }
-
-    
 }

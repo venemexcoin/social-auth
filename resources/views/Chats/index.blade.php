@@ -31,10 +31,6 @@ breadcrumb-item active
 
 @endsection
 
-@section("recapcha")
- {!! htmlScriptTagJsApi(['action' => 'homepage']) !!}
-@endsection
-
 @section('content')
 
  <!-- Main content -->

@@ -18,11 +18,6 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    {{-- Sistema de recapcha  --}}
-
-    {!! htmlScriptTagJsApi(['action' => 'homepage']) !!}
-    
 </head>
 <body>
     <div id="app">

@@ -87,13 +87,4 @@ class User extends Authenticatable
     {
         return $this->morphOne(Image::class, 'imageable');
     }
-
-    public function products()
-    {
-        return $this->hasMany(Product::class)->withTimestamps();
-    }
-    public function tasks()
-    {
-        return $this->hasManyThrough(Task::class, Product::class);
-    }
 }

@@ -28,9 +28,6 @@ Foro
 @section("styles")
 
 @endsection
-@section("recapcha")
- {!! htmlScriptTagJsApi(['action' => 'homepage']) !!}
-@endsection
 
 @section('content')
 

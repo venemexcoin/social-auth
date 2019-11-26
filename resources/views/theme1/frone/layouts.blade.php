@@ -35,13 +35,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <link rel="stylesheet" href="{{asset("fron/css/app.css")}}">
-
-        @yield('styles')
-
-        {{-- Recapcha sistem --}}
-
-        @yield('recapcha')
-
+    @yield('styles')
 
 </head>
 <body class="hold-transition sidebar-mini sidebar-collapse">

@@ -16,11 +16,11 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $products = Product::orderBy('id', 'ASC')->get();
+        $product = Product::orderBy('name', 'ASC')->pluck('name', 'id');
 
-        //dd($products->id);
-
-        return view('service.index', compact('products'));
+        //dd($product);
+        
+        return view('service.index', compact('product'));
     }
 
     /**
@@ -30,7 +30,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-
+        
         return view('task.create');
     }
 
@@ -85,7 +85,7 @@ class ServiceController extends Controller
      * @param  \App\Service  $service
      * @return \Illuminate\Http\Response
      */
-
+    
 
     public function selector(Request $request)
     {

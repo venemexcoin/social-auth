@@ -45,15 +45,10 @@ class DatabaseSeeder extends Seeder
 
         factory(App\Chat::class, 5)->create();
 
-        factory(App\Product::class, 5)->create();
-
-        factory(App\Task::class, 5)->create();
-
         factory(App\Category::class, 4)->create();
-
         factory(App\Tag::class, 12)->create();
 
-        factory(App\Post::class, 300)->create()->each(function ($post) {
+        factory(App\Post::class, 10)->create()->each(function ($post) {
             $post->image()->save(factory(App\Image::class)->make());
             $post->tags()->attach($this->array(rand(1, 3)));
             $number_comments = rand(1, 6);

@@ -1,30 +1,13 @@
 @extends("theme1.$theme5.layouts")
 
 @section("titles")
-Foro
+Permisos
 @endsection
 @section("homeD")
-{{ route('home')}}
-@endsection
-@section("layoutR")
-{{ route('blog')}}
+{{ route('admin.index')}}
 @endsection
 @section("homeT")
-Home
-@endsection
-@section("layout")
-Blog
-@endsection
-@section("otros")  {{--} ruta--}}
-{{ route('chat.create')}}
-@endsection
-@section("otros1") {{-- Nompre de la ruta--}}
-
-Crear
-
-@endsection
-@section("otros2") {{--class par poner--}}
-breadcrumb-item active
+Panel Admi
 @endsection
 
 @section("styles")

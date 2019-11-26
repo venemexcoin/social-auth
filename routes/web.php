@@ -22,195 +22,6 @@ Route::get('/servImail', function () {
     return view('/info.servImail');
 });
 
-Route::get('/formulario', function () {
-    return view('/Blog.formulario');
-});
-
-Route::get('/selector', function () {
-
-    $products = App\Product::get();
-
-    return view('/service.create');
-});
-
-// Route::get('/video3', function () {
-//     return view('/javascrip/video3/index');
-// });
-
-// Route::get('/video4', function () {
-
-//     $user = App\User::all();
-
-//     //dd($user);
-//     return view('/javascrip/video4/index', compact('user'));
-// });
-
-// Route::get('video5', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video5/index', ['users' => $users]);
-// });
-
-// Route::get('video6', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video6/index', ['users' => $users]);
-// });
-// Route::get('video7', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video7/index', ['users' => $users]);
-// });
-
-// Route::get('video8', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video8/index', ['users' => $users]);
-// });
-
-// Route::get('video9', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video9/index', ['users' => $users]);
-// });
-
-// Route::get('video10', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video10/index', ['users' => $users]);
-// });
-
-// Route::get('video11', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video11/index', ['users' => $users]);
-// });
-
-// Route::get('video12', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video12/index', ['users' => $users]);
-// });
-
-// Route::get('video13', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video13/index', ['users' => $users]);
-// });
-
-// Route::get('video14', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video14/index', ['users' => $users]);
-// });
-
-// Route::get('video15', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video15/index', ['users' => $users]);
-// });
-
-
-// Route::get('video16', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video16/index', ['users' => $users]);
-// });
-
-// Route::get('video17', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video17/index', ['users' => $users]);
-// });
-
-// Route::get('video18', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video18/index', ['users' => $users]);
-// });
-
-// Route::get('video19', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video19/index', ['users' => $users]);
-// });
-
-// Route::get('video20', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video20/index', ['users' => $users]);
-// });
-
-// Route::get('video21', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video21/index', ['users' => $users]);
-// });
-// Route::get('video22', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video22/index', ['users' => $users]);
-// });
-
-// Route::get('video25', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video25/index', ['users' => $users]);
-// });
-
-// Route::get('video26', function () {
-
-//     $users = App\User::get();
-
-//     // dd($users);
-//     return view('/javascrip/video26/index', ['users' => $users]);
-// });
-
-Route::get('video27', function () {
-
-    $users = App\User::get();
-
-    // dd($users);
-    return view('/javascrip/video27/index', ['users' => $users]);
-});
 
 Auth::routes();
 
@@ -230,9 +41,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('etiqueta/{slug}',  'Web\PageController@tag')->name('tag');
 
     //perfil personal
-
     Route::get('profil/{id}', 'Web\ProfilController@profil')->name('profil');
     Route::get('level/{id}', 'Web\ProfilController@level')->name('level');
+
 
 
     //Roles
@@ -346,9 +157,4 @@ Route::group(['middleware' => ['auth']], function () {
     Route::name('create_comment_path')->post('/chat/{chat}/comment', 'CommentController@creates');
 
     Route::name('vote_post_path')->post('/posts/{post}/vote', 'PostVotesController@store');
-
-    Route::resource('task',   'TaskController');
-
-    Route::resource('service', 'ServiceController');
-    Route::post('selector',  'ServiceController@selector')->name('selector');
 });

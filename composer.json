@@ -10,7 +10,6 @@
     "require": {
         "php": "^7.2",
         "barryvdh/laravel-debugbar": "^3.2",
-        "biscolab/laravel-recaptcha": "^4.0",
         "caffeinated/shinobi": "^5.0",
         "cybercog/laravel-love": "^8.1",
         "fideloper/proxy": "^4.0",

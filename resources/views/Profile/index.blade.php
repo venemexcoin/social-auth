@@ -17,45 +17,9 @@ Blog
 @endsection
 
 @section("styles")
-<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
 @endsection
 @section('content')
-
-{{-- reloj digital --}}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-            {{-- Fecha reloj --}}
-
-            <div class="wrap">
-                <div class="widget">
-                    <div class="fecha">
-                        <p id="diaSemana" class="dia semana"></p>
-                        <p id="dia" class="dia"></p>
-                        <p>de</p>
-                        <p id="mes" class="mes"></p>
-                        <p>del</p>
-                        <p id="year" class="year"></p>
-                    </div>
-                    {{-- ./Fecha reloj --}}
-                    {{-- Reloj Hora --}}
-
-                    <div class="reloj">
-                        <p id="horas" class="horas"></p>
-                        <p>:</p>
-                        <p id="minutos" class="minutos"></p>
-                        <p>:</p>
-                        <div class="caja-segundos">
-                            <p id="ampm" class="ampm"></p>
-                            <p id="segundos" class="segundos"></p>
-                        </div>
-                    </div>
-                    {{-- ./Fin de reloj Hora --}}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <div class="col-md-8 offset-md-2">
@@ -109,70 +73,7 @@ Blog
 
 
 @section('scripts')
-<script>
-(function(){
 
-var actualizarHora = function(){
-    var fecha = new Date(),
-        horas = fecha.getHours(),
-        ampm,
-        minutos = fecha.getMinutes(),
-        segundos = fecha.getSeconds(),
-        diaSemana = fecha.getDay(),
-        dia = fecha.getDate(),
-        mes = fecha.getMonth(),
-        year = fecha.getFullYear();
-
-    var pHoras = document.getElementById('horas'),
-        pAMPM = document.getElementById('ampm'),
-        pMinutos = document.getElementById('minutos'),
-        pSegundos = document.getElementById('segundos'),
-        pDiaSemana = document.getElementById('diaSemana'),
-        pDia = document.getElementById('dia'),
-        pMes = document.getElementById('mes'),
-        pYear = document.getElementById('year');
-
-    var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
-
-    pDiaSemana.textContent = semana[diaSemana];
-
-    pDia.textContent = dia;
-
-    var meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-
-    pMes.textContent = meses[mes];
-
-    pYear.textContent = year;
-
-    if(horas >= 12) {
-        horas = horas -12
-        ampm = 'PM';
-    }else{
-        ampm = 'AM';
-    }
-
-    if (horas == 0){
-        horas = 12;
-    }
-
-   pHoras.textContent = horas;
-
-   pAMPM.textContent = ampm;
-
-   if(minutos < 10){minutos = "0" + minutos};
-   if(segundos < 10){segundos = "0" + segundos};
-
-   pMinutos.textContent = minutos;
-
-   pSegundos.textContent = segundos;
-};
-
-actualizarHora();
-var intervalo = setInterval(actualizarHora, 1000);
-
-}());
-
-</script>
 
 @endsection
 
