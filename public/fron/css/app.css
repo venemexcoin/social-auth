@@ -1,30 +1,29 @@
 @font-face {
-    font-family: "SairaStencilOne-Regular";
-    src: url("../css/ttf/SairaStencilOne-Regular.ttf");
+    font-family: 'SairaStencilOne-Regular';
+    src: url('../css/ttf/SairaStencilOne-Regular.ttf');
 }
 
 @font-face {
-    font-family: "heroesassemblegrad";
-    src: url("../css/ttf/heroesassemblegrad.ttf");
+    font-family: 'heroesassemblegrad';
+    src: url('../css/ttf/heroesassemblegrad.ttf');
 }
 
 @font-face {
-    font-family: "heroesassembleital2";
-    src: url("../css/ttf/heroesassembleital2.ttf");
+    font-family: 'heroesassembleital2';
+    src: url('../css/ttf/heroesassembleital2.ttf');
 }
 
 @font-face {
-    font-family: "LuckiestGuy-Regular";
-    src: url("../css/ttf/LuckiestGuy-Regular.ttf");
+    font-family: 'LuckiestGuy-Regular';
+    src: url('../css/ttf/LuckiestGuy-Regular.ttf');
 }
 
 @font-face {
-    font-family: "LuckiestGuy-Regular";
-    src: url("../css/ttf/Anton-Regular.ttf");
+    font-family: 'LuckiestGuy-Regular';
+    src: url('../css/ttf/Anton-Regular.ttf');
 }
 
 .saldo {
-
     font-size: 11px;
     color: rgb(103, 103, 243);
     font-weight: bold;
@@ -80,7 +79,6 @@
 .botonE {
     font-family: SairaStencilOne-Regular;
     color: rgb(36, 148, 49);
-
 }
 
 .botonD {
@@ -91,7 +89,6 @@
 .foro_title {
     font-family: Anton-Regular;
     font-size: 20px;
-
 }
 
 .foro_info {
@@ -104,28 +101,22 @@
     background-color: #3b5998;
     border-color: darken(#3b5998, 3%);
     color: white;
-
-
 }
 
 .btn-twitter {
     background-color: #55acee;
     border-color: darken(#55acee, 3%);
     color: white;
-
-
 }
 
 .btn-google {
     background-color: #dd4b39;
     border-color: darken(#dd4b39, 3%);
     color: white;
-
 }
 
 .btn-instagram {
     background-color: #e95950;
     border-color: darken(#e95950, 3%);
     color: white;
-
 }

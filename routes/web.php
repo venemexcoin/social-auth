@@ -22,11 +22,12 @@ Route::get('/servImail', function () {
     return view('/info.servImail');
 });
 
+Route::get('/login1', function () {
+    return view('/auth.remplacer.login');
+});
+
 
 Auth::routes();
-
-
-
 
 
 // Routes
