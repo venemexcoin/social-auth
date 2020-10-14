@@ -31,6 +31,8 @@
 
 <body>
 
+    
+
   <!-- main wrap -->
   <div class="main-wrap">
 
@@ -338,7 +340,7 @@
         </div>
       </div>
     </section> -->
-    <!-- end section contact --> 
+    <!-- end section contact -->
 
     <!-- footer -->
     <footer>
@@ -382,7 +384,7 @@
   <script src="{{ asset('fron/js/jquery.prettyPhoto.js')}}"></script>
   <!-- <script src="{{ asset('fron/js/sequence.jquery.js')}}"></script> -->
   <script src="{{ asset('fron/js/jquery-hover-effect.js')}}"></script>
-  
+
   <!-- Contact Form JavaScript File -->
   <script src="{{ asset('fron/contactform/contactform.js')}}"></script>
 
